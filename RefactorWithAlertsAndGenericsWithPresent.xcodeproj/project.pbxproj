@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		E0838EE222F7A8E7009CEC96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0838EE122F7A8E7009CEC96 /* AppDelegate.swift */; };
-		E0838EE422F7A8E7009CEC96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0838EE322F7A8E7009CEC96 /* ViewController.swift */; };
 		E0838EE722F7A8E7009CEC96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0838EE522F7A8E7009CEC96 /* Main.storyboard */; };
 		E0838EE922F7A8E8009CEC96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0838EE822F7A8E8009CEC96 /* Assets.xcassets */; };
 		E0838EEC22F7A8E8009CEC96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0838EEA22F7A8E8009CEC96 /* LaunchScreen.storyboard */; };
+		E0CAD15722F7BD0300A5064B /* PresentView + Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CAD15622F7BD0300A5064B /* PresentView + Generics.swift */; };
+		E0CAD15922F7CD2100A5064B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CAD15822F7CD2100A5064B /* FirstViewController.swift */; };
+		E0CAD15B22F7CD2F00A5064B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CAD15A22F7CD2F00A5064B /* SecondViewController.swift */; };
+		E0CAD15D22F7CD3D00A5064B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CAD15C22F7CD3D00A5064B /* ThirdViewController.swift */; };
+		E0CAD15F22F7E43A00A5064B /* AlertRefactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CAD15E22F7E43A00A5064B /* AlertRefactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E0838EDE22F7A8E7009CEC96 /* RefactorWithAlertsAndGenericsWithPresent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefactorWithAlertsAndGenericsWithPresent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0838EE122F7A8E7009CEC96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E0838EE322F7A8E7009CEC96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E0838EE622F7A8E7009CEC96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0838EE822F7A8E8009CEC96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0838EEB22F7A8E8009CEC96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0838EED22F7A8E8009CEC96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0CAD15622F7BD0300A5064B /* PresentView + Generics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PresentView + Generics.swift"; sourceTree = "<group>"; };
+		E0CAD15822F7CD2100A5064B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		E0CAD15A22F7CD2F00A5064B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E0CAD15C22F7CD3D00A5064B /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		E0CAD15E22F7E43A00A5064B /* AlertRefactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertRefactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,58 @@
 		E0838EE022F7A8E7009CEC96 /* RefactorWithAlertsAndGenericsWithPresent */ = {
 			isa = PBXGroup;
 			children = (
-				E0838EE122F7A8E7009CEC96 /* AppDelegate.swift */,
-				E0838EE322F7A8E7009CEC96 /* ViewController.swift */,
+				E0838EF322F7ACD6009CEC96 /* Shared */,
+				E0838EF922F7BB64009CEC96 /* Controllers */,
 				E0838EE522F7A8E7009CEC96 /* Main.storyboard */,
+			);
+			path = RefactorWithAlertsAndGenericsWithPresent;
+			sourceTree = "<group>";
+		};
+		E0838EF322F7ACD6009CEC96 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E0CAD15522F7BCC900A5064B /* Extensions */,
+				E0838EF422F7ACEF009CEC96 /* Assets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E0838EF422F7ACEF009CEC96 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E0838EE122F7A8E7009CEC96 /* AppDelegate.swift */,
 				E0838EE822F7A8E8009CEC96 /* Assets.xcassets */,
 				E0838EEA22F7A8E8009CEC96 /* LaunchScreen.storyboard */,
 				E0838EED22F7A8E8009CEC96 /* Info.plist */,
 			);
-			path = RefactorWithAlertsAndGenericsWithPresent;
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E0838EF922F7BB64009CEC96 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E0838EFA22F7BB8B009CEC96 /* Helper */,
+				E0CAD15822F7CD2100A5064B /* FirstViewController.swift */,
+				E0CAD15A22F7CD2F00A5064B /* SecondViewController.swift */,
+				E0CAD15C22F7CD3D00A5064B /* ThirdViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E0838EFA22F7BB8B009CEC96 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E0CAD15E22F7E43A00A5064B /* AlertRefactor.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		E0CAD15522F7BCC900A5064B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E0CAD15622F7BD0300A5064B /* PresentView + Generics.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0838EE422F7A8E7009CEC96 /* ViewController.swift in Sources */,
+				E0CAD15F22F7E43A00A5064B /* AlertRefactor.swift in Sources */,
+				E0CAD15B22F7CD2F00A5064B /* SecondViewController.swift in Sources */,
+				E0CAD15922F7CD2100A5064B /* FirstViewController.swift in Sources */,
+				E0CAD15D22F7CD3D00A5064B /* ThirdViewController.swift in Sources */,
+				E0CAD15722F7BD0300A5064B /* PresentView + Generics.swift in Sources */,
 				E0838EE222F7A8E7009CEC96 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RefactorWithAlertsAndGenericsWithPresent/Info.plist;
+				INFOPLIST_FILE = RefactorWithAlertsAndGenericsWithPresent/Shared/Assets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RefactorWithAlertsAndGenericsWithPresent/Info.plist;
+				INFOPLIST_FILE = RefactorWithAlertsAndGenericsWithPresent/Shared/Assets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
